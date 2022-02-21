@@ -31,4 +31,4 @@ async def on_message(message):
         await message.channel.send('**Command`s die du verwenden kannst:**\r\n'
                                     '-help, -userinfo, -github')
 
-client.run('OTQ1MzQ2ODYwMDc0MjgzMDE4.YhO03w.mpq7j_ths58fWjvxw95ompIvYlY')
+client.run('')
