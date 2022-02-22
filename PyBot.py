@@ -53,10 +53,10 @@ async def on_message(message):
     if '+wixen' in message.content:
         await message.channel.send('Gib es noch nicht')
 
-    if message.content.startswith('-userinfo'):
+    if message.content.startswith('userinfo'):
         args = message.content.split(' ')
         if len(args) == 2:
-            member : member = discord.utils.find(lambda m: args[1] in m.name, message.guild.member)
+            member : Member = discord.utils.find(lambda m: args[1] in m.name, message.guild.members)
             if member:
                 embed = discord.Embed(title='Userinfo für {}'.format(member.name),
                                       description='User Infos über {}'.format(member.mention),
@@ -72,7 +72,10 @@ async def on_message(message):
                 if rollen:
                     embed.add_field(name='Rollen', value=rollen, inline=True)
                 embed.set_thumbnail(url=member.avatar_url)
-                embed.set_footer('Valla.')
-                await message.channel.send(embed=embed)               
+                embed.set_footer(text='Valla')
+                await message.channel.send(embed=embed)
+                
+                
+                
     
-client.run('OTQ1MzQ2ODYwMDc0MjgzMDE4.YhO03w.9YSR02SXkZLAfKYXIND9AgxOHbg')
+client.run('OTQ1MzQ2ODYwMDc0MjgzMDE4.YhO03w.F6ZjFdZSInmcg5Vc7UpR2B7Vwok')
