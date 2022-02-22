@@ -75,7 +75,4 @@ async def on_message(message):
                 embed.set_footer(text='Valla')
                 await message.channel.send(embed=embed)
                 
-                
-                
-    
-client.run('OTQ1MzQ2ODYwMDc0MjgzMDE4.YhO03w.F6ZjFdZSInmcg5Vc7UpR2B7Vwok')
+client.run('')
